@@ -1,0 +1,91 @@
+.navbar-item {
+    position: relative;
+    overflow: hidden;
+    padding: .5vh 2vw;
+    box-sizing: border-box;
+}
+
+.navbar-image-wrapper {
+    height: 35vh;
+    border: 5px solid orangered;
+    border-radius: 100px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.navbar-image {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    right: 1.8vw;
+    position: relative;
+}
+
+.navbar-item:hover .navbar-image {
+    transform: scale(1.05);
+}
+
+.navbar-info {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    transition: background 0.5s ease;
+    border-radius: 20px;
+    width: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.custom-navbar-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 25;
+    cursor: pointer;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    background: transparent;
+    background-size: contain;
+    border: none;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-navbar-arrow img, .custom-navbar-arrow svg {
+    width: 150%;
+    height: 150%;
+}
+
+
+.custom-navbar-arrow:hover {
+    transform: scale(1.5) translateY(-50%); /* Scale up on hover */
+}
+
+.next-navbar-arrow {
+    right: 20px;
+}
+
+.prev-navbar-arrow {
+    left: 20px;
+}
+
+.navbar-slick-prev, .navbar-slick-next {
+    display: block !important;
+}
+
+.navbar-slick-prev {
+    left: 20px !important;
+}
+
+.navbar-slick-next {
+    right: 20px !important;
+}
